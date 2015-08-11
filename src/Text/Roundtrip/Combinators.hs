@@ -33,13 +33,11 @@ module Text.Roundtrip.Combinators
   , xmlString
 ) where
 
-import Prelude hiding ((.), foldl)
+import Prelude hiding (pure, (*>), (<*), (<*>), (<$>), (.), foldl)
 
 import Control.Category ((.))
 
 import Data.Char (isSpace)
-import Data.Maybe (Maybe)
-import Data.Either (Either)
 
 import qualified Data.Text as T
 

@@ -1,5 +1,7 @@
 module Text.Roundtrip.Classes where
 
+import Prelude hiding ((<*>), pure)
+
 import Data.Eq (Eq)
 import Data.Char (Char)
 
