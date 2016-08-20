@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE TemplateHaskell #-}
 module Control.Isomorphism.Partial.TH
   ( defineIsomorphisms
@@ -29,8 +30,13 @@ defineIsomorphisms' :: Name -> (String -> String) -> Q [Dec]
 defineIsomorphisms' d renameFun =
     do info <- reify d
        let cs = case info of
+#if MIN_VERSION_template_haskell(2,11,0)
+                  TyConI (DataD _ _ _ _ cs _) -> cs
+                  TyConI (NewtypeD _ _ _ _ c _) -> [c]
+#else
                   TyConI (DataD _ _ _ cs _) -> cs
                   TyConI (NewtypeD _ _ _ c _) -> [c]
+#endif
                   otherwise -> error $ show d ++
                                        " neither denotes a data or newtype declaration. Found: " ++
                                        show info
