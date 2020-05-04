@@ -24,8 +24,8 @@ Build-type:     Simple
 Cabal-version:  >=1.8
 
 Source-repository head
-  Type:     darcs
-  location: http://darcs.factisresearch.com/pub/roundtrip
+  Type:     git
+  location: https://github.com/factisresearch/roundtrip
 
 Library
   Hs-Source-Dirs: src
