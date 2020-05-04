@@ -1,5 +1,5 @@
 Name:           roundtrip
-Version:        0.2.0.5
+Version:        0.2.0.6
 Synopsis:       Bidirectional (de-)serialization
 Description:    Roundtrip allows the definition of bidirectional
                 (de-)serialization specifications. The specification language
