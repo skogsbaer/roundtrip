@@ -1,4 +1,4 @@
-oundtrip allows the definition of bidirectional (de-)serialization
+roundtrip allows the definition of bidirectional (de-)serialization
 specifications. The specification language is based on the ideas described
 in the paper Invertible Syntax Descriptions: Unifying Parsing and Pretty
 Printing by Tillmann Rendel and Klaus Ostermann, Haskell Symposium 2010.
