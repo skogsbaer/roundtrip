@@ -6,7 +6,7 @@ module Text.Roundtrip.SpecPrinter (
 
 ) where
 
-import Prelude hiding (catch)
+import Prelude hiding (catch, (<>))
 
 import Control.Exception (AsyncException, catch)
 import qualified Data.Text as T

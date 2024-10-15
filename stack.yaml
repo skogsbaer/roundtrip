@@ -1,0 +1,10 @@
+# See https://github.com/commercialhaskell/stack/wiki/stack.yaml for a documentation
+# on the format of this file.
+
+packages:
+- '.'
+
+resolver: lts-14.22
+allow-newer: true
+require-stack-version: ">= 1.7.1"
+

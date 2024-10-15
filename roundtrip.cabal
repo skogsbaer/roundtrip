@@ -1,5 +1,5 @@
 Name:           roundtrip
-Version:        0.2.0.4
+Version:        0.2.0.6
 Synopsis:       Bidirectional (de-)serialization
 Description:    Roundtrip allows the definition of bidirectional
                 (de-)serialization specifications. The specification language
@@ -21,14 +21,15 @@ Author:         Stefan Wehr <wehr@factisresearch.com>,
 Maintainer:     Stefan Wehr <wehr@factisresearch.com>,
 Category:       Text
 Build-type:     Simple
-Cabal-version:  >=1.8
+Cabal-version:  >=1.10
 
 Source-repository head
-  Type:     darcs
-  location: http://darcs.factisresearch.com/pub/roundtrip
+  Type:     git
+  location: https://github.com/factisresearch/roundtrip
 
 Library
   Hs-Source-Dirs: src
+  Default-language: Haskell2010
   Exposed-modules:
       Text.Roundtrip
     , Text.Roundtrip.Combinators
@@ -41,7 +42,7 @@ Library
     , Control.Isomorphism.Partial.Constructors
     , Control.Isomorphism.Partial.Derived
   Build-depends:
-      base >= 4 && < 5
+      base >= 4.6 && < 5
     , safe
     , containers
     , text
